@@ -21,6 +21,9 @@ COPY server ./server
 ENV CHROME_PATH=/usr/bin/chromium \
     CHROME_ARGS="--no-sandbox --disable-dev-shm-usage --disable-gpu" \
     NODE_ENV=production
+# COPY는 root 소유로 올라오는데, 3장 문제 서버가 실행 중에 uploads/data 폴더를
+# 만들어야 해서 node 사용자가 쓸 수 있도록 소유권을 넘긴다
+RUN chown -R node:node /app
 USER node
 WORKDIR /app/server
 EXPOSE 3000
