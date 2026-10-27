@@ -14,5 +14,9 @@ Thumbs.db
 # 서버 플래그 (실제 정답, 저장소에 올리지 않음)
 server/flags.json
 
+# 3장 문제 서버가 실행할 때마다 만드는 파일들 (일부는 플래그 평문을 그대로 담고 있어서 올리지 않음)
+server/ch3/data/
+server/ch3/uploads/
+
 # 출제자용 풀이 문서 (정답이 담김, 저장소에 올리지 않음)
 wargame reference/2장-풀이-초안.md

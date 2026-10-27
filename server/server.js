@@ -2,7 +2,8 @@
  * KLOAD 워게임 서버
  *   /        게임 화면 (저장소 최상위의 index.html, css, js, assets)
  *   /ch2/... 2장 문제 (XSS)
- * 다른 장 문제는 /ch1, /ch3 처럼 폴더를 추가해 붙인다.
+ *   /ch3/... 3장 문제 (파일 업로드·다운로드 취약점, 로스팅 공장)
+ * 다른 장 문제는 /ch1 처럼 폴더를 추가해 붙인다.
  */
 const express = require('express');
 const path = require('path');
@@ -17,5 +18,6 @@ app.get('/', (req, res) => res.sendFile(path.join(ROOT, 'index.html')));
 ['css', 'js', 'assets'].forEach(d => app.use('/' + d, express.static(path.join(ROOT, d))));
 
 app.use('/ch2', require('./ch2'));
+app.use('/ch3', require('./ch3'));
 
 app.listen(config.port, () => console.log('KLOAD 서버: ' + config.origin));

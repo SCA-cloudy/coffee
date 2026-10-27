@@ -10,5 +10,17 @@
     "KLOAD{example_ch2_08}",
     "KLOAD{example_ch2_09}",
     "KLOAD{example_ch2_10}"
+  ],
+  "ch3": [
+    "KLOAD{example_ch3_01}",
+    "KLOAD{example_ch3_02}",
+    "KLOAD{example_ch3_03}",
+    "KLOAD{example_ch3_04}",
+    "KLOAD{example_ch3_05}",
+    "KLOAD{example_ch3_06}",
+    "KLOAD{example_ch3_07}",
+    "KLOAD{example_ch3_08}",
+    "KLOAD{example_ch3_09}",
+    "KLOAD{example_ch3_10}"
   ]
 }
