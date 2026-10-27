@@ -10,7 +10,11 @@ function page(p, body, headExtra) {
   const banner = '<header class="banner">' +
     '<p class="eyebrow">3장 · ' + esc(p.step) + ' · ' + esc(p.feature) + '</p>' +
     '<p class="scene">' + esc(p.scene) + '</p>' +
-    '<p class="goal"><b>목표</b> ' + esc(p.goal) + '</p>' +
+    '<p class="goal"><b>목표</b> ' + esc(p.goal) +
+    // href="" + target="_blank" 는 (주소를 따로 안 넘겨도) 지금 보고 있는 페이지의
+    // 실제 주소를 새 탭에서 그대로 연다 — 게임 창(iframe) 안에는 주소창이 없어서
+    // 주소를 직접 바꿔야 하는 문제는 이 링크로 풀어야 한다.
+    ' <a href="" target="_blank" rel="noopener" class="newwin">새 탭에서 열기 (주소창 확인·편집)</a></p>' +
     '</header>';
   return '<!doctype html><html lang="ko"><head><meta charset="utf-8">' +
     '<meta name="viewport" content="width=device-width, initial-scale=1">' +

@@ -17,6 +17,7 @@ a { color: var(--leaf); }
 .scene { font-size: 15px; }
 .goal { font-size: 14px; }
 .goal b { color: var(--flame); margin-right: 6px; }
+.newwin { margin-left: 8px; font-size: 12px; color: var(--ember); }
 
 /* 로스팅 공장 화면 */
 main { max-width: 760px; margin: 20px auto; padding: 24px; background: var(--roast-card); border: 2px solid var(--roast-edge); border-radius: 12px; }
